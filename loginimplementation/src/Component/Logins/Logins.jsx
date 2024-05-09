@@ -13,20 +13,25 @@ event.preventDefault();
 if(username==='user' || password==='password')
     {
         setMessage('Welcome, User!')
+        setUsername('');
+      setPassword('');
     }
     else {
         setMessages('Invalid username or password')
+        setUsername('');
+      setPassword('');
     }
         }
 
         return (
             <>
+            <h1>Login Page</h1>
             <div>
       {message && <p>{message}</p>}
       {!message && (
         
         <form onSubmit={handleSubmit}>
-            <h1>Login Page</h1>
+            
             <p>{messages}</p>
           <div>
             <label htmlFor="username">Username:</label>
