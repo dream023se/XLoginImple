@@ -12,7 +12,7 @@ const Logins= ()=>{
 event.preventDefault();
 if(username==='user' || password==='password')
     {
-        setMessage('Welcome, User!')
+        setMessage('Welcome, user')
         setUsername('');
       setPassword('');
     }
